@@ -25,6 +25,7 @@ function sketch(p5: P5CanvasInstance<MySketchProps>) {
   p5.draw = () => {
     let bgColor = p5.color(skyColor, 40, 50);
     p5.background(bgColor);
+    p5.ellipse(p5.width / 2, p5.height / 2, 50, 50);
 
   };
 }

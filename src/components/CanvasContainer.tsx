@@ -13,7 +13,7 @@ function CanvasContainer() {
   return (
     <>
       <ReactP5Wrapper sketch={sketch} skyColor={skyColor} />
-      <button onClick={handleClick}>Rotate</button>
+      <button onClick={handleClick}>Explore</button>
     </>
   );
 }
