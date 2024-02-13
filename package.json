@@ -1,6 +1,7 @@
 {
   "name": "space-gen",
   "version": "0.1.0",
+  "homepage": "https://heyitszackb.github.io/space-gen",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -10,13 +11,17 @@
     "@types/node": "^16.18.80",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
+    "openai": "^4.27.0",
+    "p5": "^1.9.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-p5-wrapper": "^4.1.2",
     "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,5 +44,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/p5": "^1.7.6",
+    "gh-pages": "^6.1.1",
+    "typescript": "^5.3.3"
   }
 }
